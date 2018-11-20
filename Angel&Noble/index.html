@@ -1,64 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>LIBRARY</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
-
 </head>
-	<body onload="displayBooks()">
-		
 
-		<input id="bookTitle" type="text" placeholder="Enter book title" />
-		<input id="bookAuthor" type="text" placeholder="Enter Author" />
-		<input id="bookPublished" type="number" placeholder="Enter year Published" />
-		<input id="bookIsbn" type="number" placeholder="Enter Isbn" />
-		<input id="bookStatus" type="text" placeholder="Enter Book Status" />
-		<input type="button" value="Add Album" onclick="addBook()" />
-			<h1 id="display"></h1>
+<body style="background-image: url(https://images.unsplash.com/photo-1499447155021-4907f71b9ef5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=be61cec375d8c41c07018135423c376d&auto=format&fit=crop&w=1500&q=80);" onload="displayBooks()">
 
-	<header class="container-fluid">
+	<div class="container">
+		<h1 id="myBook"> ANGEL AND NOBLE</h1>
+		<br>
+		<br>
+
+		<form>
+			<div class="form-group">
+				<label for="exampleInputEmail1"> TITLE</label>
+				<input id="bookTitle" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter book title">
+			</div>
+
+			<div class="form-group">
+				<label for="exampleInputEmail1">AUTHOR</label>
+				<input id="bookAuthor" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter Author">
+			</div>
+
+			<button type="button" class="btn btn-primary" onclick="addBook()">ADD BOOK</button>
+		</form>
+
+		<hr>
+
 		<div class="row">
 			<div class="col">
-			<h1 id="myBook"> ANGEL AND NOBLE</h1>		
+				<h4 id="stockDisplay">STOCK: 0</h4>
+			</div>
 		</div>
+
+		<div class="row">
+			<div id="bookDisplay" class="col"></div>
 		</div>
-	</header>
+	</div>
 
-		<section class="container">
-			<div class="row">
-				<div class="col">
-					<h4>ADD BOOK</h4>
-				</div>
-				<div class="col">
-					<input id="newBook" type="text" placeholder="Enter BOOK Title">
-				</div>
-				<div class="col">
-					<input type="button" value="Add" onclick="addBook()">
-				</div>
-			</div>
-
-			<hr/>
-
-			<div class="row">
-				<div class="col">
-					<h4 id="stockDisplay">STOCK: 0</h4>
-				</div>
-				<div class="col">
-					<h3>STOCK</h3>
-				</div>
-				<div class="col">
-					<input type="button" value="SORT" onclick="sortShoes()">
-					<h1 id="myButton"></h1>
-				</div>
-			</div>
-
-			<div class="row">
-				<div id="bookDisplay" class="col"></div>
-			</div>
-		</section>
-
-
-<script src="script.js"></script>
+	<script src="script.js"></script>
 </body>
+
 </html>

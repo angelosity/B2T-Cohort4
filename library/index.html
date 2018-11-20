@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LIBRARY</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+	<body onload="displayBooks()">
+		
+
+		<input id="bookTitle" type="text" placeholder="Enter book title" />
+		<input id="bookAuthor" type="text" placeholder="Enter Author" />
+		<input id="bookPublished" type="number" placeholder="Enter year Published" />
+		<input id="bookIsbn" type="number" placeholder="Enter Isbn" />
+		<input id="bookStatus" type="text" placeholder="Enter Book Status" />
+		<input type="button" value="Add Album" onclick="addBook()" />
+			<h1 id="display"></h1>
+
+	<header class="container-fluid">
+		<div class="row">
+			<div class="col">
+			<h1 id="myBook"> ANGEL AND NOBLE</h1>		
+		</div>
+		</div>
+	</header>
+
+		<section class="container">
+			<div class="row">
+				<div class="col">
+					<h4>ADD BOOK</h4>
+				</div>
+				<div class="col">
+					<input id="newBook" type="text" placeholder="Enter BOOK Title">
+				</div>
+				<div class="col">
+					<input type="button" value="Add" onclick="addBook()">
+				</div>
+			</div>
+
+			<hr/>
+
+			<div class="row">
+				<div class="col">
+					<h4 id="stockDisplay">STOCK: 0</h4>
+				</div>
+				<div class="col">
+					<h3>STOCK</h3>
+				</div>
+				<div class="col">
+					<input type="button" value="SORT" onclick="sortShoes()">
+					<h1 id="myButton"></h1>
+				</div>
+			</div>
+
+			<div class="row">
+				<div id="bookDisplay" class="col"></div>
+			</div>
+		</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
